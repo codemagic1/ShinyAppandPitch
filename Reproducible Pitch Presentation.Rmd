@@ -1,0 +1,51 @@
+---
+title: "Reproducible Pitch Presentation"
+author: "RK"
+date: "6/30/2020"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+```{r libraries, include=FALSE}
+library(caret)
+library(gbm)
+library(randomForest)
+library(caretEnsemble)
+library(kernlab)
+```
+
+## iris Dataset
+
+- Edgar Anderson's Iris Data
+- gives measurements in centimetres of the variables sepal length and width and petal length and width for first 50 flowers from each of 3 species of iris
+
+```{r data_head, echo=TRUE}
+head(iris)
+```
+
+## IrisClassifier Objective
+
+- Shiny Web Application
+- view data from the iris dataset
+- enter four values (Sepal.Length, Sepal.Width, Petal.Length, Petal.Width) to predict the Iris Species
+
+## Prediction Algorithm
+
+- individual models: k-Nearest Neighbours (knn), Support Vector Machine (svmRadial), Generalised Boosted Regression Model (gbm)
+- combined Random Forest (rf) model using results of individual models
+
+## Prediction Algorithm (continued)
+```{r models, echo = FALSE}
+stackedModel <- get(load(file = "C:\\Users\\Shekhar1\\Desktop\\Data Science\\ShinyAppandPitch\\IrisClassifier\\stackediris.rda"))
+stackedModel
+```
+
+## Final Thoughts
+
+- documentation provided under "User Guide" tab to allow user to refer to it as needed
+- stacked model used to get most accurate prediction
+- user can verify prediction accuracy by choosing inputs from dataset provided
+

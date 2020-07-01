@@ -1,0 +1,12 @@
+name: IrisClassifier
+title: IrisClassifier
+username:
+account: codemagic1
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 2523893
+bundleId: 3337511
+url: https://codemagic1.shinyapps.io/IrisClassifier/
+when: 1593584574.75876
+asMultiple: FALSE
+asStatic: FALSE

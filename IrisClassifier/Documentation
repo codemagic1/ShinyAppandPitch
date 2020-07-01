@@ -1,0 +1,15 @@
+IRISCLASSIFIER USER GUIDE
+
+IrisClassifier is a Shiny Web Application that allows the user
+to view data from the iris dataset and enter four values 
+(Sepal.Length, Sepal.Width, Petal.Length, Petal.Width) to predict 
+the Iris Species.
+
+Disclaimer:
+  1. All fields must be filled before clicking the "Enter" button.
+  2. The "Enter" button must be clicked to generate a prediction -
+      simply pressing the "Enter" or "Return" key on the keyboard 
+      will not do anything.
+  
+Users can switch between the data tab and the prediction tab to see 
+the original iris dataset and the prediction computed from the inputs.
