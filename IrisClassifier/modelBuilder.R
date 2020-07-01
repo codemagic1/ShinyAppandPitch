@@ -1,6 +1,8 @@
 library(caret)
 library(caretEnsemble)
 library(kernlab)
+library(gbm)
+library(randomForest)
 
 data(iris)
 trainIndex <- createDataPartition(iris$Species, p = 0.8, list = FALSE)
